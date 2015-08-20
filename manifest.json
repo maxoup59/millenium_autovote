@@ -4,17 +4,28 @@
     "name": "Millenium autovoter",
     "description": "Lolilol ça trou le cul ! ",
     "version": "1.0",
+    
+    "browser_action": {
+        "default_icon": "popup/icon.gif",
+        "default_popup": "popup/popup.html"
+    },
 
     "content_scripts": [
                         {
                         "matches": ["http://millenium-servers.com/newvoter.php"],
-                        "js": ["content.js"]
+                        "js": ["ressource/jquery.js","content/content.js"]
                         }
                         ],
-    "web_accessible_resources": ["vote.js"],
+    
+    
+    "web_accessible_resources": ["content/vote.js","ressource/jquery.js"],
+    
+    
     "background": {
-        "scripts": ["jquery.js","back.js"]
+        "scripts": ["ressource/jquery.js","background/back.js"]
     },
+    
+    
 "permissions": [
     "https://ajax.googleapis.com/","background"
   ]
