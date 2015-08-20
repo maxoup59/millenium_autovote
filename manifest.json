@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    
+    "name": "Millenium autovoter",
+    "description": "Lolilol ça trou le cul ! ",
+    "version": "1.0",
+
+    "content_scripts": [
+                        {
+                        "matches": ["http://millenium-servers.com/newvoter.php"],
+                        "js": ["content.js"]
+                        }
+                        ],
+    "web_accessible_resources": ["vote.js"],
+    "background": {
+        "scripts": ["jquery.js","back.js"]
+    },
+"permissions": [
+    "https://ajax.googleapis.com/","background"
+  ]
+}
