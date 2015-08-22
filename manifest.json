@@ -13,13 +13,15 @@
     "content_scripts": [
                         {
                         "matches": ["http://millenium-servers.com/newvoter.php"],
-                        "js": ["ressource/jquery.js","content/content.js"]
+                        "js": ["ressource/jquery.js","content/content.js"],
+                        "run_at": "document_end"
                         }
                         ],
     
     
     "web_accessible_resources": ["content/vote.js","ressource/jquery.js"],
     
+     "options_page": "option/options.html",
     
     "background": {
         "scripts": ["ressource/jquery.js","background/back.js"]
@@ -27,6 +29,6 @@
     
     
 "permissions": [
-    "https://ajax.googleapis.com/","background"
+    "https://ajax.googleapis.com/","background","storage"
   ]
 }
