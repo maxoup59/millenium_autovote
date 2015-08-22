@@ -46,3 +46,25 @@ chrome.runtime.onMessage.addListener(
 
 
 refresh();
+/*function verifyAndSaveLicense(license)
+{
+	if(license.accessLevel == "FULL")
+	{
+		alert("ok");
+	}
+}
+
+chrome.identity.getAuthToken({ 'interactive': true }, function(token) {
+var CWS_LICENSE_API_URL = 'https://www.googleapis.com/chromewebstore/v1.1/userlicenses/aepbggimipmchoefgjeoihiakogjhfgd';
+var req = new XMLHttpRequest();
+req.open('GET', CWS_LICENSE_API_URL + chrome.runtime.id);
+req.setRequestHeader('Authorization', 'Bearer ' + token);
+req.onreadystatechange = function() {
+  if (req.readyState == 4) {
+    var license = JSON.parse(req.responseText);
+    verifyAndSaveLicense(license);
+  }
+}
+req.send();
+
+});*/

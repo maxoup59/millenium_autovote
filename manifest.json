@@ -2,8 +2,8 @@
     "manifest_version": 2,
     
     "name": "Millenium autovoter",
-    "description": "Lolilol ça trou le cul ! ",
-    "version": "1.0",
+    "description": "Cette extension permet de voter sur le serveur privé Millénium automatiquement",
+    "version": "0.4",
     
     "browser_action": {
         "default_icon": "popup/icon.gif",
@@ -18,7 +18,6 @@
                         }
                         ],
     
-    
     "web_accessible_resources": ["content/vote.js","ressource/jquery.js"],
     
      "options_page": "option/options.html",
@@ -26,9 +25,18 @@
     "background": {
         "scripts": ["ressource/jquery.js","background/back.js"]
     },
+    "key": "aepbggimipmchoefgjeoihiakogjhfgd",
+    
+    "oauth2": {
+    "client_id": "700858155335-tsfo0uo924tmkr1q28913i7q1757a63l.apps.googleusercontent.com",
+    "scopes": [
+      "https://www.googleapis.com/auth/plus.login",
+      "https://www.googleapis.com/auth/chromewebstore.readonly"
+    ]
+  },
     
     
 "permissions": [
-    "https://ajax.googleapis.com/","background","storage"
+    "https://ajax.googleapis.com/","background","storage","identity","https://www.googleapis.com/"
   ]
 }

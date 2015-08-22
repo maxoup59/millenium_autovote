@@ -48,13 +48,23 @@ function readTimeLeft() {
 document.addEventListener('customAPILoaded', function() {
 		if(!isConnected())
 		{
-			$( "input[name='connexion_username']" ).val("krato123");
-			$( "input[name='connexion_password']" ).val("noirex");
+		chrome.storage.sync.get(null, function(items) {
+    	if(typeof items.id !== "undefined" && typeof items.password !== "undefined")
+    	{
+			$( "input[name='connexion_username']" ).val(items.id);
+			$( "input[name='connexion_password']" ).val(items.password);
 			chrome.runtime.sendMessage({
     		action: "setInterval",
     		interval: 3
 			});
 			$( "form[action='index.php']" ).submit();
+    	}
+    	else 
+    	{
+    		chrome.runtime.openOptionsPage();
+    	}
+    });
+
 		}
 		else 
 		{

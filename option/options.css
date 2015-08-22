@@ -1,0 +1,91 @@
+body {
+background: url('background.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	font-family: Verdana;
+	overflow: hidden;
+	margin: 0;
+	padding: 0;
+    text-decoration: none;
+}
+
+input {
+	border: 1px solid white;
+	border-radius: 3px;
+	height: 40px;
+	width: 360px;
+	background: rgba(0,0,0,0.5);
+	outline: none;
+	color: white;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 17px;
+	display: block;
+	margin-bottom: 16px;
+	transition: all 0.4s ease 0s;
+}
+
+input:hover {
+	transition: all 0.4s ease 0s;
+	background: rgba(0,0,0,0.7);
+}
+
+input:focus {
+	border: 1.5px solid #3498db;
+	transition: all 0.4s ease 0s;
+	background: rgba(0,0,0,0.7);
+}
+
+#save {
+	border: 1px solid rgba(44, 62, 80,0.5);
+	border-radius: 3px;
+	height: 40px;
+	width: 360px;
+	outline: none;
+	color: white;
+	padding-left: 15px;
+	padding-right: 15px;
+	font-size: 17px;
+	margin-bottom: 16px;
+	cursor: pointer;
+	background: #3498db;
+    background: linear-gradient( #3498db, #2980b9);
+	transition: all 0s ease 0s;
+}
+#save:hover {
+	border: 1px solid rgba(44, 62, 80,0.2);
+	background: #3498db;
+    background: linear-gradient( #66B2FF, #3399FF);
+	transition: all 1s ease 0s;
+}
+#save:active {
+	color: rgba(255, 255, 255,0.7);
+	width: 300px;
+	transition: all 0.05s ease 0s;
+	margin-left: 30px;
+}
+	
+#centrage { 
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#logo {
+	background-image: url(logo.png);
+	width: 334px;
+	height: 115px;
+    left: 50%;
+    position: fixed;
+    transform: translate(-50%);
+	margin-top:30px;
+}

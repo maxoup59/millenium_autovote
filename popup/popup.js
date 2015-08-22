@@ -9,10 +9,10 @@ $(document).ready(function() {
 	          date.getMinutes() + "m" +
 	           date.getSeconds() + "s");
 	    });
-		/*chrome.storage.sync.get(null, function(items) {
+		chrome.storage.sync.get(null, function(items) {
     	if(typeof items.id === "undefined"|| typeof items.password === "undefined")
     	{
-    		
+    		chrome.runtime.openOptionsPage();
     	}
-		});*/
+		});
 	});
