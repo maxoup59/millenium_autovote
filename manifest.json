@@ -3,10 +3,10 @@
     
     "name": "Millenium autovoter",
     "description": "Cette extension permet de voter sur le serveur privé Millénium automatiquement",
-    "version": "0.4",
+    "version": "0.4.1",
     
     "browser_action": {
-        "default_icon": "popup/icon.gif",
+        "default_icon": "popup/icon.png",
         "default_popup": "popup/popup.html"
     },
 
@@ -25,7 +25,6 @@
     "background": {
         "scripts": ["ressource/jquery.js","background/back.js"]
     },
-    "key": "aepbggimipmchoefgjeoihiakogjhfgd",
     
     "oauth2": {
     "client_id": "700858155335-tsfo0uo924tmkr1q28913i7q1757a63l.apps.googleusercontent.com",

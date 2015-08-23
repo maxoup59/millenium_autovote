@@ -1,0 +1,46 @@
+body,html {
+	margin: 0 auto;
+	color: black;
+	-webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+	background: url('background.jpg') center center;
+}
+
+#conteneur {
+	width: 400px;
+	font-family: Verdana;
+}
+
+#menu {
+	background: rgba(255,255,255,0.5);
+	border-bottom: 1.5px solid white;
+	width: 100%;
+	height: 40px;
+	font-size: 25px;
+	color: white;
+	font-weight: bold;
+	line-height: 40px;
+	text-align: center;
+}
+
+#text_O {
+	text-align:right;
+	padding: 5px;
+}
+.hover:hover {
+	cursor: pointer;
+	font-weight: bold;
+	color: #e74c3c;
+	text-decoration: none;
+}
+.hover {
+	text-decoration: underline;
+	color: white;
+}
+#nextCheckin {
+	color: #f1c40f;
+}

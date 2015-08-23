@@ -4,10 +4,9 @@ $(document).ready(function() {
 	    }, function(response) {
 	    	//alert(response.nextCheckIn);
     		var date = new Date(response.nextCheckIn);
-	        $("#nextCheckin").html("Prochain vote a " +
-	         date.getHours() + "h" +
-	          date.getMinutes() + "m" +
-	           date.getSeconds() + "s");
+	        $("#nextCheckin").html(date.getHours() + ":" +
+	          date.getMinutes() + ":" +
+	           date.getSeconds());
 	    });
 		chrome.storage.sync.get(null, function(items) {
     	if(typeof items.id === "undefined"|| typeof items.password === "undefined")
@@ -15,4 +14,8 @@ $(document).ready(function() {
     		chrome.runtime.openOptionsPage();
     	}
 		});
+		$("#Bout").click(function(){
+			chrome.runtime.openOptionsPage();
+		});
+		
 	});
